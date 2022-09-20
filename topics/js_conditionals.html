@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditionals</title>
+    <link rel="stylesheet" href="../stlye.css">
+</head>
+<body>
+    <h1>Conditionals</h1>
+    <h2>Comparisons</h2>
+    <ul>
+        <li><code>a < b, a > b</code> : Greater than / less than.</li>
+        <li><code>a <= b, a >= b</code> : Greater than or equals / less than or equals.</li>
+        <li><code>a == b, a != b</code> : Equals and not-equals.</li>
+    </ul>
+    <p>Comparison operators return a <code>boolean</code> value, which can be assigned to a variable.</p>
+    <h3>Behavior</h3>
+    <ul>
+        <li>Strings are compared letter-by-letter. If they are the same, but one is longer, that will be considered greater. E.g.: <code>Will < William</code>.<br>
+            However, capitalization matters, so lowercase letters are greater than their uppercase parts.
+        </li>
+        <li>When comparing different types, strings are converted to numbers. Furthermore, <code>true == 1</code> and <code>false == 0</code>.</li>
+        <li>A regular equality check (<code>==</code>) cannot differentiate between <code>false</code>, <code>0</code> and <code>""</code> (empty string).<br>
+            A strict equality operator (<code>===</code>) checks equality without type conversion.    
+        </li>
+        <li><code>null</code> and <code>undefined</code>: 
+            <ul>
+                <li><code>null</code> and <code>undefined</code> are equal, but not strictly equal, since they are a different type.</li>
+                <li>For other comparisons, they are converted to Number. <code>null</code> becomes <code>0</code>, and <code>undefined</code> becomes <code>NaN</code>.</li>
+                <li>However, <code>null > 0 // false</code>, <code>null == 0 // false</code>, but <code>null >= 0 //true</code>. Comparisons convert null to a number, treating
+                    it as 0. On the other hand, <code>==</code> is defined in a way, that <code>null</code> only equals <code>undefined</code>, and vica versa, and nothing else.
+                </li>
+                <li><code>undefined</code> cannot be compared to anything, it will always return false, except when compared to <code>null</code> or <code>undefined</code>.</li>
+            </ul>
+        </li>        
+    </ul>
+    <h2>Conditional Statements (<code>if</code>, <code>else</code>, <code>else if</code>, <code>switch</code>)</h2>
+    <ul>
+        <li>Use <code>if</code> to specify a block of code to be executed, if a specified condition is true.</li>
+        <li>Use <code>else</code> to specify a block of code to be executed, if the same condition is false.</li>
+        <li>Use <code>else if</code> to specify a new condition to test, if the first condition is false.</li>
+        <li>Use <code>switch</code> to specify many alternative blocks of code to be executed.</li>
+        <li><code>ternary operator</code> : <code>condition ? run this code : run this instead</code>. Ternary operators can be chained together, however, it isn't
+            recommended, as it is less readable than an equivalent <code>else...if</code> statement.
+        </li>
+    </ul>
+    <h3>Logical Operators</h3>
+    <p>In JavaScript there are 4 logical operators:</p>
+    <ul>
+        <li><code>||</code>: OR : If any of the arguments are true, it returns <code>true</code>. However, if an operand is not a <code>boolean</code>, it is converted to a <code>boolean</code>:
+            <ul>
+                <li><code>1</code> is converted to <code>true</code>, while <code>0</code> is converted to <code>false</code>.</li>
+                <li>In a chain of OR, the chain returns the first 'truthy' value, or the last one, if all were <code>false</code>.</li>
+            </ul>
+        </li>
+        <li><code>&&</code>: AND: If any of the arguments are false, it returns <code>false</code>. Also, the precedence of <code>&&</code> is higher than <code>||</code>.</li>
+        <li><code>!</code>: NOT : Converts the expression to a boolean, then returns the inverse. Sometimes a double not (<code>!!</code>) is used to convert an expression to a boolean.</li>
+    </ul>
+    <p><a href="../index.html">Go back</a></p> 
+    <!--
+        2
+        1
+        null
+        true
+        2
+        first
+        -
+        third
+    -->
+</body>
+</html>

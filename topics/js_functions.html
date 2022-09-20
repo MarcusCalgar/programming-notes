@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h1>Functions</h1>
+    <h2>Basics</h2>
+    <ul>
+        <li>A <code>function</code> is a reusable block of code.</li>
+        <li>A function that belongs to an object is called a <code>method</code>.</li>
+        <li>To invoke a function use a set of parentheses after its name. E.g.: <code>myFunction();</code></li>
+        <li>Some functions must have <strong>parameters</strong> provided to work. Parameters are sometimes called <em>arguments</em>, <em>properties</em> or <em>attributes</em>.</li>
+        <li>Multiple parameters are separated by a comma.</li>
+        <li>Some parameters are optional.</li>
+        <li>You can use default values for optional parameters. E.g.: <code>function hello(name = "Blake"){console.log(`Hello ${name}.`);}</code></li>
+        <li>A new addition to language, the <em>nullish coalescing operator</em>, <code>??</code> treats <code>null</code> and <code>undefined</code> the same way.
+            <br>E.g.: <code>alert(value ?? "unknown);</code> If <code>value</code> is defined, it will be used, if it's not-defined, that is, it is either <code>null</code> or <code>undefined</code>, the code after the operator will run.
+        </li>
+        <li>A function is a value, if assigned to a variable. It represents an action.</li>
+        <li><strong>Function Declarations</strong> are available everywhere in the block where they are created.</li>
+    </ul>
+    <h3>Anonymous Functions</h3>
+    <ul>
+        <li><em>Anonymous Functions</em> have no names, and usually get another function as a parameter.</li>
+        <li>This way of creating a function is called <em>function expression</em>.</li>
+        <li><strong>Note</strong>: function expressions are not hoisted.</li>
+    </ul>
+    <h3>Arrow Functions</h3>
+    <ul>
+        <li><code>(number) => {console.log(number*2);}</code></li>
+        <li><code>(number) => console.log(number*2);</code>: If the function has only one line, the curly brackets are not necessary.</li>
+        <li><code>number => console.log(number*2);</code>: If the function has only one parameter, the parentheses are not necessary either.</li>
+    </ul>
+    <h3>Callback Functions</h3>
+    <ul>
+        <li><em>Callback Functions</em> are functions that are given as parameters to other functions with the expectation that if needed, they will be called in the function they are added to.</li>
+    </ul>
+    <h2>Function Scope and Conflicts</h2>
+    <ul>
+        <li>When creating a function, it's variables that are created in the function only live in the function. That is, they are not accessible for other parts of the program.</li>
+        <li>The top level of scope is called the <strong>global scope</strong>. These are accessible everywhere.</li>
+    </ul>
+    <h2>Function Return Values</h2>
+    <ul>
+        <li>A <em>return value</em> is a value that the function returns after it is done.</li>
+        <li><code>return;</code> without a value immediately exits the function.</li>
+        <li>A function with an empty <code>return</code> or without one, will return <code>undefined</code>.</li>
+    </ul>
+    <h2>Naming a Function</h2>
+    <ul>
+        <li>Since functions are actions that usually do something, the name should describe what it does.</li>
+        <li>Since the function name should describe what the function does, it should only do that one thing.</li>
+    </ul>
+    <p><a href="../index.html">Go back</a></p>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stlye.css">
+    <title>Numbers</title>
+</head>
+<body>
+    <h2>JavaScript Arithmetic</h2>
+    <ul>
+        <li><code>+</code> - Addition</li>
+        <li><code>-</code> - Subtraction</li>
+        <li><code>*</code> - Multiplication</li>
+        <li><code>**</code> - Exponentiation</li>
+        <li><code>/</code> - Division</li>
+        <li><code>%</code> - Modulus (Remainder)</li>
+        <li><code>++</code> - Increment
+            <ul>
+                <li>Post increment does the increment but returns the <em>original</em> number. <code>num++;</code></li>
+                <li>Pre increment also does the increment, but then returns the <em>updated</em> number. <code>++num;</code></li>
+            </ul>
+        </li>
+        <li><code>--</code> - Decrement</li>
+        <li>JavaScript numbers are 64 bit double precision floating point.</li>
+        <li>Integers are accurate up to 15 digits, while their maximum number can be 17.</li>
+        <li><code>==</code> : equality: test if the values are equal.</li>
+        <li><code>===</code> : strict equality: test if the values and the data types are equal.</li>
+        <li>The <code>+</code> sign as a unary operator converts non-numbers to numbers.
+            <ul>
+                <li><code>+true == 1</code></li>
+                <li><code>+"" == 0</code></li>
+            </ul>
+        </li>
+        <li>The comma <code>,</code> operator divides expressions, but only returns the last one. E.g.: <code>let a = (1+2, 3+4); alert(a);</code> returns <code>7</code>.</li>
+        <li>Non-addition arithmetic operators turn empty strings into 0. E.g.: <code>""-2=-2</code></li>
+        <li><code>true + false</code> returns <code>1</code>.</li>
+        <li><code>null</code> becomes 0 after numeric conversion.</li>
+        <li>Space characters (<code>/n /t</code>) are converted to 0.</li>
+        <li>Operations with assignment always return <code>undefined</code>, so it is not possible, to assign a value and read it in the same expression.</li>
+    </ul>
+    <h3>Adding numbers and strings</h3>
+    <ul>
+        <li>Adding two numbers result in addition.</li>
+        <li>Adding two strings will concatenate them.</li>
+        <li>Adding a number and a string (or vica versa) results in concatenation.</li>
+        <li>JavaScript will try to convert strings to numbers in all numeric operations, except addition.</li>
+        <li>Trying to do maths with non-numeric strings will result in <code>NaN</code> (<code>Not-a-Number</code>).</li>
+        <li><code>NaN</code> is a number. (type)</li>
+        <li><code>Infinity</code> or <code>-Infinity</code> are also numbers. Dividing by 0 returns <code>Infinity</code>.</li>
+        <li>While numbers can be created as <code>Objects</code>, this is erroneous because while an <code>Object Number</code> is equal (<code>==</code>) to a <code>literal</code>, they are not strictly equal (<code>===</code>).
+            <ul>
+                <li><code>Objects</code> cannot be compared.</li>
+            </ul>
+        </li>
+    </ul>
+    <h3>Some arithmetical methods</h3>
+    <ul>
+        <li><code>someNumber.toFixed(numberOfDecimals)</code>: rounds <code>someNumber</code> to <code>numberOfDecimals</code> decimal places.</li>
+    </ul>
+    <p><a href="../index.html">Go back</a></p>
+</body>
+</html>
