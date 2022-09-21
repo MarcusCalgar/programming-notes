@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Errors</title>
+    <link rel="stylesheet" href="../../stlye.css">
+</head>
+<body>
+    <h1>Understanding Errors</h1>
+    <h2>Overview</h2>
+    <p>An error is a built in <code>Object</code> in the language. It has crucial information about what and where went wrong during execution.</p>
+    <ul>
+        <li>Calling on a variable that has not been declared "throws" a <code>ReferenceError</code>.</li>
+        <li>An error has a type and a message and it also tells us in which file the error occurred, on which line.</li>
+        <li>The <code>stack trace</code> helps us to understand when was the error thrown. What functions were running, etc.</li>
+    </ul>
+    <h2>Common Types of Errors</h2>
+    <ul>
+        <li><code>SyntaxError</code>: happens when the code isn't written according to the rules of the language.</li>
+        <li><code>ReferenceError</code>: happens when a variable hasn't been declared or is misspelled.</li>
+        <li><code>TypeError</code>: happens when:
+            <ul>
+                <li>an operand or argument passed to a function is not the same as the function expects or needs.</li>
+                <li>attempting to modify a value that cannot be changed.</li>
+                <li>attempting to use a value in an inappropriate way.</li>
+            </ul>
+            When encountering this error, consider the data types of the elements around, maybe it is not what you expect.
+        </li>
+    </ul>
+    <h2>Resolving Errors</h2>
+    <ul>
+        <li>Read the error message carefully, and try to understand it.</li>
+        <li>Google the error. Somebody else probably got it already.</li>
+        <li>Use the debugger, for example in the Chrome DevTools.</li>
+        <li>For simpler errors, use <code>console.log()</code> and other console statements.</li>
+    </ul>
+    <h2>Errors vs. Warnings</h2>
+    <p>While errors immediately crash the running of a program, a warning doesn't. These signal potential problems, though usually not that severe. Nonetheless
+        it is recommended to address them if possible.
+    </p>
+    <p><a href="../problem-solving.html">Go back</a></p>
+    <p><a href="../../index.html">Home</a></p>
+</body>
+</html>
