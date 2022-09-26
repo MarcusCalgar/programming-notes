@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1>Arrays</h1>
+    <ul>
+        <li>Arrays are special variables that hold multiple values.</li>
+        <li>It's common practice to declare arrays with <code>const</code>.</li>
+        <li>Elements can be accessed by their <strong>index number</strong>. Arrays are <code>zero indexed</code>.</li>
+        <li>JavaScript arrays can hold different types of data at the same time. E.g.: strings, numbers, functions, other arrays, objects, etc...</li>
+        <li>In JavaScript arrays always use numbered indexes, they cannot have names as in hashes.</li>
+        <li>Arrays are Objects, but Objects use <strong>named indexes</strong>, while arrays use <strong>numbered indexes</strong>.</li>
+    </ul>
+    <h2>Properties and methods</h2>
+    <ul>
+        <li><code>array.length</code>: returns the number of elements</li>
+        <li><code>array.sort()</code>: sorts the array</li>
+        <li><code>array.push("new item")</code>: puts the "new item" to the end of the array. It also returns the new length value.</li>
+        <li><code>Array.isArray("variable")</code>: checks whether "variable" is an array or not.</li>
+        <li><code>array instanceof Array;</code>: returns <code>true</code> if the checked variable is an array.</li>
+        <li><code>array.toString();</code>: returns a string with the comma separated values in the array.</li>
+        <li><code>array.join(" * ")</code>: like <code>toString()</code> but the separator can be specified.</li>
+        <li><code>array.pop()</code>: removes (and returns) the last item from the array.</li>
+        <li><code>array.shift()</code>: removes (and returns) the first element of the array, while shifts all remaining elements down one index.</li>
+        <li><code>array.unshift()</code>: adds a new element to the beginning of the array, while renumbering the indexes. Also returns the new length.</li>
+        <li><code>delete array[n]</code>: removes the element from index <code>n</code> and leaves a "hole" which is <code>undefined</code>.</li>
+        <li><code>array1.concat(array2, array3)</code>: merges two arrays. Returns a new array and leaves the others intact.</li>
+        <li><code>array1.concat("Peter")</code>: <code>concat</code> can also merge strings.</li>
+        <li><code>array.splice(2, 0, "Item1", "Item2");</code>: adds items to an array. The first number defines the position where the new items need to be,
+            the second is number of items to be deleted. The rest is the items that are getting added. It returns an array with the deleted items.
+        </li>
+        <li><code>array.slice(1, 4)</code>: slices out part of an existing array from the first index number, up to (but not included) the second number, to a new array.
+            It leaves the original array intact.
+        </li>
+    </ul>
+    <p><a href="../main_topics/javascript.html">Go back</a></p>
+    <p><a href="../index.html">Home</a></p>
+</body>
+</html>
