@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+    <link rel="stylesheet" href="../stlye.css">
+</head>
+<body>
+    <h1>Looping</h1>
+    <ul>
+        <li><code>for...of</code> loop: if we have a collection, you can iterate through it: <code>for (const <em>item</em> of <em>collection</em>){}</code>.</li>
+        <li><code>map()</code>: do something to a collection and return a new collection. 
+            E.g.: <code>const newArray = oldArray.map(doSomethingFunction);</code>
+        </li>
+        <li><code>filter()</code>: test each item against a rule and return a new array with the items that pass the rule.
+             E.g.: <code>const newArray = oldArray.filter(someBooleanTest);</code>
+        </li>
+        <li><code>map()</code> and <code>filter()</code> are usually used with <em>function expressions</em>.
+            E.g.: <code>const filteredArray = unfilteredArray.filter((item) => item.someBooleanTest());</code>
+        </li>
+        <li>The <code>break</code> statement immediately exits a loop.</li>
+        <li>The <code>continue</code> statement jumps to the next iteration of the loop.</li>
+        <li><code>while(someBooleanCondition){doTheThing}</code>: it runs the code until the condition is satisfied.</li>
+        <li>The <code>do...while</code> loop works similarly to the <code>while</code> loop but guarantees at least one iteration.</li>
+        <li>Ternary operators cannot have <code>break</code> and <code>continue</code>, it will throw a syntax error.</li>
+        <li><code>for</code> loops can be labelled, then the labels can be used to break out of multiple levels deep iterations.
+            E.g.: <code>outer: for(..;..;..){for(..;..;..){break outer}}</code> breaks out of the <code>outer</code> loop.
+        </li>
+    </ul>
+    <p><a href="./js_arrays.html">Go back</a></p>
+    <p><a href="../index.html">Home</a></p>
+</body>
+</html>
