@@ -9,6 +9,50 @@
 </head>
 <body>
     <h1>DOM Manipulation and Events</h1>
+    <h2>DOM - Document Object Model</h2>
+    <ul>
+        <li>A tree-like (tree of "nodes") representation of the contents of the page.</li>
+        <li>Targeting nodes with selectors is possible with CSS selectors.</li>
+        <li>There are also relationship selectors that are properties of the node. E.g.: <code>node.firstElementChild</code>
+            or <code>node.lastElementSibling</code>.
+        </li>
+        <li>HTML elements are turned into nodes, and nodes have a lot of built in methods and properties attached to them.
+            <ul>
+                <li><strong>Query Selectors</strong>: E.g.: <code>element.querySelector(selector)</code>: returns the first match of the selector. <br>
+                    If the selector has multiple matches, the elements are returned in a <code>nodelist</code>. This is NOT an array, even if it looks, 
+                    and sometimes behaves like an array. Some array methods are missing from nodelists, but it is possible to convert nodelists to Arrays
+                    using <code>Array.from()</code> or the spread operator.
+                </li>
+                <li><strong>Element creation</strong>: creates a new element, e.g.: <code>const div = document.createElement('div');</code>
+                    Note, that this just creates the element, but doesn't add it to the DOM.
+                </li>
+                <li><strong>Append element</strong>: <code>parentNode.appendChild(childNode);</code></li>
+                <li><strong>Remove element</strong>: <code>parentNode.removeChild(child);</code>. Returns a reference to the child.</li>
+                <li>When accessing a CSS style from JS, use camelCase. E.g.: <code>div.style.background-color</code> doesn't work, but
+                    <code>div.style.backgroundColor</code> and <code>div.style['background-color']</code> does.
+                </li>
+                <li><strong>Editing Attributes</strong>: 
+                    <ul>
+                        <li><code>div.setAttribute('attributeToSet', 'value');</code></li>
+                        <li><code>div.getAttribute('attributeToGet');</code></li>
+                        <li><code>div.removeAttribute('attributeToRemove');</code></li>
+                    </ul>
+                </li>
+                <li><strong>Working with Classes</strong>
+                    <ul>
+                        <li><code>div.classList.add('newClass');</code>: adds a new class to the element.</li>
+                        <li><code>div.classList.remove('classToRemove');</code>: removes a class from the element.</li>
+                        <li><code>div.classList.toggle('class');</code>: if the element doesn't have the class, it add is, else, it removes it.</li>
+                    </ul>
+                </li>
+                <li><strong>Adding text content</strong>: <code>div.textContent = 'Hello World!';</code></li>
+                <li><strong>Adding HTML content</strong>: <code>div.innerHTML = '&#60;span&#62;Hello World&#60;/span&#62;';</code></li>
+            </ul>
+        </li>
+        <li>To prevent JS running before the DOM finished loading, add the <code>script</code> tag at the end of the HTML.
+            Or when linking from an outside source, use: <code>&#60;script src="script.js" defer>&#60;/script></code>
+        </li>
+    </ul>
     <p><a href="../main_topics/javascript.html">Go back</a></p>
     <p><a href="../index.html">Home</a></p>
 </body>
