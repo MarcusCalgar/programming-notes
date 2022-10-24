@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <link rel="stylesheet" href="/stlye.css">
+</head>
+<body>
+    <h1>Variables</h1>
+    <ul>
+        <li>A variable is like a 'box' for data.</li>
+        <li>Use <code>console.log();</code> to log messages to the console.</li>
+        <li>Use <code>alert("message");</code> to make the website a popup with the content of <code>"message"</code>.</li>
+        <li>Declare a variable with the <code>let</code> keyword.
+            <ul>
+                <li>It is possible to declare variables on a single line, but it isn't recommended. E.g.: <code>let user="John", age=25, message="hello";</code></li>
+            </ul>
+        </li>    
+        <li>The keywords <code>var</code> and <code>let</code> work very similarly, however there is difference in scope.</li>
+        <li>The content of a variable can be easily changed. E.g.: <code>let name="John"; name="Roger";.</code>
+            <br>
+            <strong>Note: </strong>Some functional programming languages like Scala and Erlang forbid the value change of declared variables.
+        </li>
+    </ul>
+    <h2>Variable naming</h2>
+    <ul>
+        <li>A variable name must <em>only</em> contain digits, letters and the symbols <code>$</code> and <code>_</code> , however, the first character cannot be a digit.</li>
+        <li>Longer variable names should be in <code>camelCase</code>.</li>
+    </ul>
+    <h2>Constants</h2>
+    <ul>
+        <li>Variables that do not change are declared by the <code>const</code> keyword. Such variables cannot be reassigned.</li>
+        <li>Constants that can be hard coded usually written in uppercase. E.g.: <code>const COLOR_RED="#F00";</code></li>
+        <li>Creating a new variable for a new thing isn't a problem. A couple more lines of code won't affect performance too much.</li>
+    </ul>
+    <p><a href="js_main.html">Go back</a></p>
+    <p><a href="/index.html">Home</a></p>
+</body>
+</html>

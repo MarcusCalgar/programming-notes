@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conditionals</title>
-    <link rel="stylesheet" href="../stlye.css">
+    <link rel="stylesheet" href="/stlye.css">
 </head>
 <body>
     <h1>Conditionals</h1>
@@ -22,9 +22,9 @@
             However, capitalization matters, so lowercase letters are greater than their uppercase parts.
         </li>
         <li>When comparing different types, strings are converted to numbers. Furthermore, <code>true == 1</code> and <code>false == 0</code>.</li>
-        <li>A regular equality check (<code>==</code>) cannot differentiate between <code>false</code>, <code>0</code> and <code>""</code> (empty string).<br>
-            A strict equality operator (<code>===</code>) checks equality without type conversion.    
+        <li>A regular equality check (<code>==</code>) cannot differentiate between <code>false</code>, <code>0</code> and an <code>""</code> (empty string).                
         </li>
+        <li>A strict equality operator (<code>===</code>) checks equality without type conversion.</li>
         <li><code>null</code> and <code>undefined</code>: 
             <ul>
                 <li><code>null</code> and <code>undefined</code> are equal, but not strictly equal, since they are a different type.</li>
@@ -47,28 +47,16 @@
         </li>
     </ul>
     <h3>Logical Operators</h3>
-    <p>In JavaScript there are 4 logical operators:</p>
     <ul>
-        <li><code>||</code>: OR : If any of the arguments are true, it returns <code>true</code>. However, if an operand is not a <code>boolean</code>, it is converted to a <code>boolean</code>:
+        <li><code>||</code> : OR : If any of the arguments are true, it returns <code>true</code>. However, if an operand is not a <code>boolean</code>, it is converted to a <code>boolean</code>:
             <ul>
                 <li><code>1</code> is converted to <code>true</code>, while <code>0</code> is converted to <code>false</code>.</li>
-                <li>In a chain of OR, the chain returns the first 'truthy' value, or the last one, if all were <code>false</code>.</li>
+                <li>In a chain of ORs, the chain returns the first <code>truthy</code> value, or the last one, if all were <code>false</code>.</li>
             </ul>
         </li>
-        <li><code>&&</code>: AND: If any of the arguments are false, it returns <code>false</code>. Also, the precedence of <code>&&</code> is higher than <code>||</code>.</li>
-        <li><code>!</code>: NOT : Converts the expression to a boolean, then returns the inverse. Sometimes a double not (<code>!!</code>) is used to convert an expression to a boolean.</li>
+        <li><code>&&</code> : AND: If any of the arguments are false, it returns <code>false</code>. Also, the precedence of <code>&&</code> is higher than <code>||</code>.</li>
+        <li><code>!</code> : NOT : Converts the expression to a boolean, then returns the inverse. Sometimes a double NOT (<code>!!</code>) is used to convert an expression to a boolean.</li>
     </ul>
-    <p><a href="../main_topics/javascript.html">Go back</a></p>
-    <p><a href="../index.html">Home</a></p>
-    <!--
-        2
-        1
-        null
-        true
-        2
-        first
-        -
-        third
-    -->
-</body>
+    <p><a href="js_main.html">Go back</a></p>
+    <p><a href="/index.html">Home</a></p>
 </html>
